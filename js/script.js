@@ -32,6 +32,13 @@ form.addEventListener('submit', async (e) => {
             errorMsg.style.display = 'none'
         }, 5000);
     }
+    else if(res.status == 400) {
+        spinner.style.display = 'none'
+        errorMsg.style.display = ''
+        setTimeout(() => {
+            errorMsg.style.display = 'none'
+        }, 5000);
+    }
 
     spinner.style.display - ''
 
