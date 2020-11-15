@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Heart ML </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
     <div class="loader-container">
@@ -13,11 +14,15 @@
     </div>
     <h1 id="a"></h1>
     <div class="result" id="result-positive">
-        <h1>We think you have heart disease</h1>
+        <h1>This person has Heart Disease</h1>
+        <i class="fa fa-frown-o"></i>
+        <a href=""><button>Try for another person</button></a>
     </div>
 
     <div class="result" id="result-negative">
-        <h1>Dont worry you dont have heart dissease</h1>
+        <h1>This Person don't have heart disease</h1>
+        <i class="fa fa-smile-o"></i>
+        <a href=""><button>Try for another person</button></a>
     </div>
 
     <div class="msg">
@@ -40,13 +45,13 @@
     
             <p>Chest Pain Type</p>
             <!-- cp: chest pain type -->
-            <input type="radio" id="typical-angina" name="cp" value="1">
+            <input type="radio" id="typical-angina" name="cp" value="0">
             <label for="typical-angina">Typical Angina</label>
-            <input type="radio" id="atypical-angina" name="cp" value="2">
+            <input type="radio" id="atypical-angina" name="cp" value="1">
             <label for="atypical-angina">Atypical Angina</label>
-            <input type="radio" id="non-anginal-pain" name="cp" value="3">
+            <input type="radio" id="non-anginal-pain" name="cp" value="2">
             <label for="non-anginal-pain">Non Anginal Pain</label>
-            <input type="radio" id="asymptomatic" name="cp" value="4">
+            <input type="radio" id="asymptomatic" name="cp" value="3">
             <label for="asymptomatic">asymptomatic</label>
             <br><br>
     
@@ -95,11 +100,11 @@
     
             <p>the slope of the peak exercise ST segment</p>
             <!-- slope: the slope of the peak exercise ST segment -->
-            <input type="radio" value="1" name="slope" id="upsloping"> 
+            <input type="radio" value="0" name="slope" id="upsloping"> 
             <label for="upsloping">upsloping</label>
-            <input type="radio" value="2" name="slope" id="flat"> 
+            <input type="radio" value="1" name="slope" id="flat"> 
             <label for="flat">Flat</label>
-            <input type="radio" value="3" name="slope" id="downsloping"> 
+            <input type="radio" value="2" name="slope" id="downsloping"> 
             <label for="downsloping">downsloping</label> <br><br>
     
     
@@ -112,11 +117,11 @@
     
             <p>Thal</p>
             <!-- thal: 3 = normal; 6 = fixed defect; 7 = reversable defect -->
-            <input type="radio" value="3" name="thal" id="normal-thal"> 
+            <input type="radio" value="1" name="thal" id="normal-thal"> 
             <label for="normal-thal">Normal</label>
-            <input type="radio" value="6" name="thal" id="fixed-defect"> 
+            <input type="radio" value="2" name="thal" id="fixed-defect"> 
             <label for="fixed-defect">fixed defect</label>
-            <input type="radio" value="7" name="thal" id="reversable-defect"> 
+            <input type="radio" value="3" name="thal" id="reversable-defect"> 
             <label for="reversable-defect">reversable defect</label>
     
             <br><br>

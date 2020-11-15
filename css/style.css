@@ -8,6 +8,7 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #b9b9b9;
   background-color: #222;
+  background-size: auto;
   overflow-x: hidden !important;
 }
 
@@ -123,16 +124,36 @@ input[type="checkbox"] + label {
 
 .result{
   width: 80%;
-  height: 50vh;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
   text-align: center;
+
 }
 
 .result h1{
-  color: #ffc107;
+  color: tomato;
+  margin: 30px;
+}
+
+.result i{
+  font-size: 70px;
+  color: tomato;
+}
+
+.result button{
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #000;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .msg{
@@ -170,3 +191,8 @@ input[type="checkbox"] + label {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+#result-negative h1, #result-negative i{
+  color: #ffc107;
+} 
